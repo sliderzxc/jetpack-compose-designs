@@ -1,2 +1,2 @@
-# Module Information
+# Designs
 * Bazar - Books Mobile App ([View Bazar Figma Design](https://www.figma.com/file/GeiEY2fkIAyu46zpXZTlSy/Bazar---Books-Mobile-App-(Community)?type=design&node-id=3855%3A5393&mode=design&t=rud2S2CB3XGolWF1-1))
