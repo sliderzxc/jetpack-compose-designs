@@ -33,7 +33,7 @@ import androidx.compose.ui.unit.sp
 import com.sliderzxc.compose.designs.R
 
 @Composable
-fun OnBoardingFirstScreen() {
+fun OnBoardingSecondScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -59,8 +59,8 @@ fun OnBoardingFirstScreen() {
                 .padding(horizontal = 12.dp)
         ) {
             Image(
-                painter = painterResource(id = R.drawable.onboarding1),
-                contentDescription = "OnBoarding Image 1"
+                painter = painterResource(id = R.drawable.onboarding2),
+                contentDescription = "OnBoarding Image 2"
             )
         }
 
@@ -74,7 +74,7 @@ fun OnBoardingFirstScreen() {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "Now reading books\nwill be easier",
+                    text = "Your Bookish Soulmate Awaits",
                     fontSize = 24.sp,
                     lineHeight = 32.4.sp,
                     fontFamily = FontFamily(Font(R.font.open_sans)),
@@ -85,7 +85,7 @@ fun OnBoardingFirstScreen() {
                 )
                 Spacer(modifier = Modifier.height(12.dp))
                 Text(
-                    text = " Discover new worlds, join a vibrant reading community. Start your reading adventure effortlessly with us.",
+                    text = "Let us be your guide to the perfect read. Discover books tailored to your tastes for a truly rewarding experience.",
                     modifier = Modifier.padding(horizontal = 44.dp),
                     fontSize = 16.sp,
                     lineHeight = 24.sp,
@@ -100,17 +100,17 @@ fun OnBoardingFirstScreen() {
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Image(
-                    painter = painterResource(id = R.drawable.positive_onboarding_indicator),
-                    contentDescription = "positive page indicator",
-                    modifier = Modifier.size(10.dp)
+                    painter = painterResource(id = R.drawable.negative_onboarding_indicator),
+                    contentDescription = "negative page indicator",
+                    modifier = Modifier.size(6.dp)
                 )
 
                 Spacer(modifier = Modifier.width(3.dp))
 
                 Image(
-                    painter = painterResource(id = R.drawable.negative_onboarding_indicator),
-                    contentDescription = "negative page indicator",
-                    modifier = Modifier.size(6.dp)
+                    painter = painterResource(id = R.drawable.positive_onboarding_indicator),
+                    contentDescription = "positive page indicator",
+                    modifier = Modifier.size(10.dp)
                 )
 
                 Spacer(modifier = Modifier.width(3.dp))
@@ -172,6 +172,6 @@ fun OnBoardingFirstScreen() {
 
 @Composable
 @Preview(showBackground = true)
-private fun PreviewOnBoardingFirstScreen() {
-    OnBoardingFirstScreen()
+private fun PreviewOnBoardingSecondScreen() {
+    OnBoardingSecondScreen()
 }
